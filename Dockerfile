@@ -1,5 +1,5 @@
-FROM registry.redhat.io/rhel8/mariadb-105
-
+#FROM registry.redhat.io/rhel8/mariadb-105
+FROM demo/mariadb-105
 # needed for intialization
 ENV MYSQL_USER=user
 ENV MYSQL_PASSWORD=pass
