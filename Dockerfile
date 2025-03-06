@@ -19,4 +19,4 @@ COPY run.sh /usr/share/container-scripts/mysql/init/
 EXPOSE 3306
 
 # Start the server
-CMD  ["run-mysqld"]
+CMD  ["run-mysqld-safe"]
