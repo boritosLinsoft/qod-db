@@ -1,5 +1,6 @@
 #FROM registry.redhat.io/rhel8/mariadb-105
 FROM default-route-openshift-image-registry.apps.ocp4.example.com/test/mariadb-105
+
 # needed for intialization
 ENV MYSQL_USER=user
 ENV MYSQL_PASSWORD=pass
@@ -18,4 +19,4 @@ COPY run.sh /usr/share/container-scripts/mysql/init/
 EXPOSE 3306
 
 # Start the server
-CMD ["run-mysqld"]
+ENTRYPOINT  ["run-mysqld"]
