@@ -1,7 +1,7 @@
 #FROM registry.redhat.io/rhel8/mariadb-105
 #FROM default-route-openshift-image-registry.apps.ocp4.example.com/demo/mariadb-105
 #FROM registry.access.redhat.com/rhel8/mariadb-105:1781785558
-FROM image-registry.openshift-image-registry.svc:5000/test-application/mariadb-105
+FROM image-registry.openshift-image-registry.svc:5000/test-application/mariadb-105:1781785558
 
 
 # needed for intialization
